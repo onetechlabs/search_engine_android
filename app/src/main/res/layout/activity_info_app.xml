@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/logo"
+                    android:layout_marginBottom="30dp"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/left_guideline"
+                    app:layout_constraintGuide_percent=".15"
+                    android:orientation="vertical"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/right_guideline"
+                    app:layout_constraintGuide_percent=".85"
+                    android:orientation="vertical"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/top_guideline"
+                    app:layout_constraintGuide_percent=".15"
+                    android:orientation="horizontal"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bottom_guideline"
+                    app:layout_constraintGuide_percent=".85"
+                    android:orientation="horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Search Engine"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"
+                    app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+                    app:layout_constraintRight_toRightOf="@+id/right_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/top_guideline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:text="This application is a one-stop search engine, where users can search for information through several available search engines such as Google or Bing through one application."
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"
+                    app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+                    app:layout_constraintRight_toRightOf="@+id/right_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/top_guideline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Copyright \u00A9 2020 Onetechlabs.\nAll right reserved."
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+                    app:layout_constraintRight_toRightOf="@+id/right_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/top_guideline"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottom_guideline"/>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
