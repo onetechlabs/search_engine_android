@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Search Engine</string>
-    <string name="host_api">http://192.168.43.89:8000</string>
+    <string name="host_api">http://192.168.100.110:8000</string>
 </resources>
